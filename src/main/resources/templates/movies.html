@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Här är alla filmer</title>
+</head>
+<body>
+<h1>Alla filmer</h1>
+
+<ul>
+
+    <li th:each="movie : ${movies}">
+        <!--Här inne loopas listan -->
+        <span th:text="${movie.title}"></span>
+    </li>
+
+
+</ul>
+
+</body>
+</html>
