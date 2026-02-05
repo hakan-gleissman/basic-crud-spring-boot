@@ -12,6 +12,9 @@
     <li th:each="movie : ${movies}">
         <!--Här inne loopas listan -->
         <span th:text="${movie.title}"></span>
+        <a th:href="@{/movies/{id}(id=${movie.id})}">Visa info</a>
+        <span> - </span>
+        <a th:href="@{/movies/{id}/edit(id=${movie.id})}">Uppdatera film</a>
     </li>
 
 
